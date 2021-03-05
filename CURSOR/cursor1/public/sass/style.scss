@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+    width: 100%;
+    body {
+        font-family: 'Trebuchet MS', sans-serif;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .cursor {
+        pointer-events: none;
+        position: absolute;
+        border: 2px solid #d14e1f;
+        border-radius: 900px;
+        opacity: 1;
+        width: 70px;
+        height: 70px;
+        left: -35px;
+        top: -35px;
+        will-change: tranform;
+        opacity: 0;
+        transition: opacity 2s linear;
+    }
+}
