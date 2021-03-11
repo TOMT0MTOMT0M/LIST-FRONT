@@ -28,6 +28,8 @@ html body div {
 }
 
 html body div .img {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   fill: white;
   width: 250px;
 }
