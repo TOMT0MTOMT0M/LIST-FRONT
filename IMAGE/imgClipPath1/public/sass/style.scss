@@ -1,0 +1,28 @@
+html {
+    height: 100%;
+    width: 100%;
+    body {
+        font-family: "Trebuchet MS", sans-serif;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .clipPath {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            transition: clip-path .5s cubic-bezier(.67, 0, .285, 1);
+            &:hover {
+                clip-path: polygon(5% 10%, 95% 0, 95% 90%, 5% 95%);
+            }
+            .clipPathImg {
+                transition: all 1s cubic-bezier(.67, 0, .285, 1), opacity 0s linear;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

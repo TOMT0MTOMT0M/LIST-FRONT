@@ -9,7 +9,7 @@ function cursor() {
         let y = (window.Event) ? e.pageY : e.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
         setTimeout(function() {
             cursorPOS.style.opacity = "1";
-            cursorPOS.style.transform = `translate(${x}px,${y}px)`;
+            cursorPOS.style.transform = `translate(${x}px,${y}px)  `;
         }, 50);
     }
 }

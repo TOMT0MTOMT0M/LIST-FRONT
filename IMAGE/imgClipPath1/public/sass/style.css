@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+html body {
+  font-family: "Trebuchet MS", sans-serif;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .clipPath {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-transition: -webkit-clip-path 0.5s cubic-bezier(0.67, 0, 0.285, 1);
+  transition: -webkit-clip-path 0.5s cubic-bezier(0.67, 0, 0.285, 1);
+  transition: clip-path 0.5s cubic-bezier(0.67, 0, 0.285, 1);
+  transition: clip-path 0.5s cubic-bezier(0.67, 0, 0.285, 1), -webkit-clip-path 0.5s cubic-bezier(0.67, 0, 0.285, 1);
+}
+
+html body .clipPath:hover {
+  -webkit-clip-path: polygon(5% 10%, 95% 0, 95% 90%, 5% 95%);
+          clip-path: polygon(5% 10%, 95% 0, 95% 90%, 5% 95%);
+}
+
+html body .clipPath .clipPathImg {
+  -webkit-transition: all 1s cubic-bezier(0.67, 0, 0.285, 1), opacity 0s linear;
+  transition: all 1s cubic-bezier(0.67, 0, 0.285, 1), opacity 0s linear;
+}
+
+html body .clipPath .clipPathImg:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=style.css.map */
