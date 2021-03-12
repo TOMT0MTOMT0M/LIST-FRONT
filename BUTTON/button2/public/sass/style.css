@@ -1,0 +1,82 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+html body {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+html body .btn {
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  border: 2px white solid;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  width: 100px;
+  text-align: center;
+}
+
+html body .btn:hover .firstText {
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+}
+
+html body .btn:hover .newText {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+html body .btn .firstText {
+  display: block;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+html body .btn .newText {
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
